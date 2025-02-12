@@ -33,7 +33,7 @@ read.markup.RCC <- function(rcc.path = ".", rcc.pattern = "*.RCC|*.rcc", exclude
 		cat("\nreading RCC file [", count, "/", length(rcc.files), "]: ", rcc.file, sep = "");
 
 		# read RCC file and enclose in valid document tags for XML parser
-		data <- xmlParse(
+		data <- XML::xmlParse(
 			paste(
 				"<doc>", 
 				paste(readLines(paste(rcc.path, rcc.file, sep = "/"), warn = FALSE), collapse = "\r"), 
