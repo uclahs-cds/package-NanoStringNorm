@@ -87,6 +87,7 @@ NanoString.mRNA.norm <- NanoStringNorm(
 	);
 
 # plot all the plots as PDF report
+\dontrun{
 pdf('NanoStringNorm_Example_Plots_All.pdf')
 Plot.NanoStringNorm(
 	x = NanoString.mRNA.norm,
@@ -94,6 +95,7 @@ Plot.NanoStringNorm(
 	plot.type = 'all'
 	);
 dev.off()
+}
 
 # publication quality tiff volcano plot
 tiff('NanoStringNorm_Example_Plots_Volcano.tiff', units = 'in',  height = 6, 
