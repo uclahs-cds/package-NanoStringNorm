@@ -1,4 +1,4 @@
-# NanoStringNorm 3.0.0 (2025-02-07)
+# NanoStringNorm 3.0.0 (2025-02-12)
 
 ## Removed
 * Removed Excel `.xls` support due to broken CRAN dependency
@@ -10,6 +10,11 @@
 ## Changed
 * Update changelog to Markdown format
 * Replaced RUnit framework with testthat
+* Minor fixes for compliance with CRAN standards
+  * Use `inherits()` for class comparisons
+  * Stop file exports in examples
+  * Explicitly declare XML function calls
+  * Ignore metadata files in package build
 
 
 # NanoStringNorm 2.0.0 (2023-03-21)

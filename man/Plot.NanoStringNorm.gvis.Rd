@@ -93,6 +93,7 @@
          );
  
  # plot the gene summaries to a directory for distribution and later viewing
+ \dontrun{
  Plot.NanoStringNorm.gvis(
         x = NanoString.mRNA.norm,
          plot.type = c('gene.norm', 'sample'),
@@ -100,6 +101,7 @@
          path.to.mongoose = 'none',
          output.directory = "NanoStringNorm_Interactive_Plot"
          );
+ }
  \}
  }
  \author{Daryl M. Waggott}

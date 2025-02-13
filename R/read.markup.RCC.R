@@ -33,7 +33,7 @@ read.markup.RCC <- function(rcc.path = ".", rcc.pattern = "*.RCC|*.rcc", exclude
 		cat("\nreading RCC file [", count, "/", length(rcc.files), "]: ", rcc.file, sep = "");
 
 		# read RCC file and enclose in valid document tags for XML parser
-		data <- xmlParse(
+		data <- XML::xmlParse(
 			paste(
 				"<doc>", 
 				paste(readLines(paste(rcc.path, rcc.file, sep = "/"), warn = FALSE), collapse = "\r"), 
@@ -43,10 +43,10 @@ read.markup.RCC <- function(rcc.path = ".", rcc.pattern = "*.RCC|*.rcc", exclude
 			);
 
 		# extract info for various tags
-		header.info <- xmlToDataFrame(getNodeSet(data, "/doc//Header"));
-		sample.info <- xmlToDataFrame(getNodeSet(data, "/doc//Sample_Attributes"));
-		lane.info <- xmlToDataFrame(getNodeSet(data, "/doc//Lane_Attributes"));
-		code.info <- xmlToDataFrame(getNodeSet(data, "/doc//Code_Summary"));
+		header.info <- XML::xmlToDataFrame(XML::getNodeSet(data, "/doc//Header"));
+		sample.info <- XML::xmlToDataFrame(XML::getNodeSet(data, "/doc//Sample_Attributes"));
+		lane.info <- XML::xmlToDataFrame(XML::getNodeSet(data, "/doc//Lane_Attributes"));
+		code.info <- XML::xmlToDataFrame(XML::getNodeSet(data, "/doc//Code_Summary"));
 
 		# convert data into table for all data structures
 		header.con <- textConnection(as.character(header.info$text));

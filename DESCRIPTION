@@ -2,7 +2,7 @@ Package: NanoStringNorm
 Type: Package
 Title: Normalize NanoString miRNA and mRNA Data
 Version: 3.0.0
-Date: 2025-02-07
+Date: 2025-02-12
 Authors@R: c(
 	person(c("Daryl", "M."), "Waggott", role = "aut"),
 	person("Paul", "Boutros", email = "PBoutros@mednet.ucla.edu", role = "cre"),
@@ -10,7 +10,8 @@ Authors@R: c(
 Depends:
   R (>= 2.14.0)
 Imports:
-  methods
+  methods,
+  XML
 Suggests:
   testthat,
   googleVis (>= 0.2.14),

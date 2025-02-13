@@ -5,3 +5,4 @@
 ^\.Rproj\.user$
 NanoStringNorm_Example_Plots_All.pdf
 NanoStringNorm_Interactive_Plot
+^.cicd-env$
