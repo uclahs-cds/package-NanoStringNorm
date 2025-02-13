@@ -17,9 +17,14 @@ importFrom("methods", "is")
 importFrom("stats", "aov", "coef", "cor", "density", "lm", "lowess",
          "median", "na.omit", "p.adjust", "qnorm",
          "quantile", "resid", "sd", "t.test")
-importFrom("utils", "download.file", "packageDescription",
-         "read.table")
-importFrom("utils", "read.csv")
+importFrom(
+    'utils',
+    'download.file',
+    'packageDescription',
+    'read.table',
+    'read.csv'
+    );
+importFrom('XML', 'xmlParse', 'xmlToDataFrame', 'getNodeSet');
 
 
 
