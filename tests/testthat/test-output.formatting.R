@@ -1,28 +1,28 @@
 test_that(
-    'test.output.formatting regression case', {
+    'output.formatting regression case', {
         load('data/NanoStringNorm.Rda');
 
         result <- NanoStringNorm:::output.formatting(
-            NanoStringNorm.test.data$inputs$x,
-            NanoStringNorm.test.data$inputs$anno,
+            NanoStringNorm.data$inputs$x,
+            NanoStringNorm.data$inputs$anno,
             round.values = TRUE,
             take.log = TRUE,
             verbose = FALSE
             );
 
-        expect_equivalent(result, NanoStringNorm.test.data$outputs$roundT.logT);
+        expect_equivalent(result, NanoStringNorm.data$outputs$roundT.logT);
         }
     );
 
 test_that(
-    'test.output.formatting errors with invalid rounding value', {
+    'output.formatting errors with invalid rounding value', {
         load('data/NanoStringNorm.Rda');
 
         expect_error(
             {
                 NanoStringNorm:::output.formatting(
-                    NanoStringNorm.test.data$inputs$x,
-                    NanoStringNorm.test.data$inputs$anno,
+                    NanoStringNorm.data$inputs$x,
+                    NanoStringNorm.data$inputs$anno,
                     round.values = 'garbage',
                     verbose = FALSE
                     );
@@ -33,14 +33,14 @@ test_that(
     );
 
 test_that(
-    'test.output.formatting errors with NA rounding value', {
+    'output.formatting errors with NA rounding value', {
         load('data/NanoStringNorm.Rda');
 
         expect_error(
             {
                 NanoStringNorm:::output.formatting(
-                    NanoStringNorm.test.data$inputs$x,
-                    NanoStringNorm.test.data$inputs$anno,
+                    NanoStringNorm.data$inputs$x,
+                    NanoStringNorm.data$inputs$anno,
                     round.values = NA,
                     verbose = FALSE
                     );
@@ -51,14 +51,14 @@ test_that(
     );
 
 test_that(
-    'test.output.formatting prints message with z-score normalized data', {
+    'output.formatting prints message with z-score normalized data', {
         load('data/NanoStringNorm.Rda');
 
         expect_output(
             {
                 NanoStringNorm:::output.formatting(
-                    NanoStringNorm.test.data$inputs$x,
-                    NanoStringNorm.test.data$inputs$anno,
+                    NanoStringNorm.data$inputs$x,
+                    NanoStringNorm.data$inputs$anno,
                     round.values = TRUE,
                     take.log = TRUE,
                     OtherNorm = 'zscore',
@@ -71,14 +71,14 @@ test_that(
     );
 
 test_that(
-    'test.output.formatting prints message with rank-normal normalized data', {
+    'output.formatting prints message with rank-normal normalized data', {
         load('data/NanoStringNorm.Rda');
 
         expect_output(
             {
                 NanoStringNorm:::output.formatting(
-                    NanoStringNorm.test.data$inputs$x,
-                    NanoStringNorm.test.data$inputs$anno,
+                    NanoStringNorm.data$inputs$x,
+                    NanoStringNorm.data$inputs$anno,
                     round.values = TRUE,
                     take.log = TRUE,
                     OtherNorm = 'rank.normal',
