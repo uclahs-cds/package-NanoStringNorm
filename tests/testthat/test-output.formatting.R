@@ -3,14 +3,14 @@ test_that(
         load('data/NanoStringNorm.Rda');
 
         result <- NanoStringNorm:::output.formatting(
-            NanoStringNorm.data$inputs$x,
-            NanoStringNorm.data$inputs$anno,
+            NanoStringNorm.test.data$inputs$x,
+            NanoStringNorm.test.data$inputs$anno,
             round.values = TRUE,
             take.log = TRUE,
             verbose = FALSE
             );
 
-        expect_equivalent(result, NanoStringNorm.data$outputs$roundT.logT);
+        expect_equivalent(result, NanoStringNorm.test.data$outputs$roundT.logT);
         }
     );
 
@@ -21,8 +21,8 @@ test_that(
         expect_error(
             {
                 NanoStringNorm:::output.formatting(
-                    NanoStringNorm.data$inputs$x,
-                    NanoStringNorm.data$inputs$anno,
+                    NanoStringNorm.test.data$inputs$x,
+                    NanoStringNorm.test.data$inputs$anno,
                     round.values = 'garbage',
                     verbose = FALSE
                     );
@@ -39,8 +39,8 @@ test_that(
         expect_error(
             {
                 NanoStringNorm:::output.formatting(
-                    NanoStringNorm.data$inputs$x,
-                    NanoStringNorm.data$inputs$anno,
+                    NanoStringNorm.test.data$inputs$x,
+                    NanoStringNorm.test.data$inputs$anno,
                     round.values = NA,
                     verbose = FALSE
                     );
@@ -57,8 +57,8 @@ test_that(
         expect_output(
             {
                 NanoStringNorm:::output.formatting(
-                    NanoStringNorm.data$inputs$x,
-                    NanoStringNorm.data$inputs$anno,
+                    NanoStringNorm.test.data$inputs$x,
+                    NanoStringNorm.test.data$inputs$anno,
                     round.values = TRUE,
                     take.log = TRUE,
                     OtherNorm = 'zscore',
@@ -77,8 +77,8 @@ test_that(
         expect_output(
             {
                 NanoStringNorm:::output.formatting(
-                    NanoStringNorm.data$inputs$x,
-                    NanoStringNorm.data$inputs$anno,
+                    NanoStringNorm.test.data$inputs$x,
+                    NanoStringNorm.test.data$inputs$anno,
                     round.values = TRUE,
                     take.log = TRUE,
                     OtherNorm = 'rank.normal',
