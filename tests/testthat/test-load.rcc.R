@@ -3,9 +3,10 @@ test_that(
         load('data/load.rcc.Rda');
 
         path <- system.file(
-            'extdata',
-            'RCC_files',
-            'RCCCollector1_rat_tcdd.csv',
+            'tests',
+            'testthat',
+            'data',
+            'load.rcc.csv',
             package = 'NanoStringNorm'
             );
         result <- read.csv.RCC(path);
@@ -18,9 +19,10 @@ test_that(
         load('data/load.rcc.Rda');
         
         path <- system.file(
-            'extdata',
-            'RCC_files',
-            'RCCCollector1_rat_tcdd.csv',
+            'tests',
+            'testthat',
+            'data',
+            'load.rcc.csv',
             package = 'NanoStringNorm'
         );
         result <- read.csv.RCC(path);
