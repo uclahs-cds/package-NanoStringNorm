@@ -37,8 +37,8 @@ test_that(
             CodeCount = 'geo.mean', 
             Background = 'mean.2sd', 
             SampleContent = 'top.geo.mean', 
-            log = TRUE, 
-            round = TRUE, 
+            take.log = TRUE,
+            round.values = TRUE,
             verbose = FALSE,
             predict.conc = TRUE
             );
@@ -56,12 +56,12 @@ test_that(
                 NanoStringNorm.test.data$inputs$x,
                 NanoStringNorm.test.data$inputs$anno
                 ),
-            anno = NA, 
+            anno = NA,
             CodeCount = 'geo.mean', 
             Background = 'mean.2sd', 
             SampleContent = 'top.geo.mean', 
-            log = TRUE, 
-            round = TRUE, 
+            take.log = TRUE, 
+            round.values = TRUE, 
             verbose = FALSE,
             predict.conc = TRUE
             );
