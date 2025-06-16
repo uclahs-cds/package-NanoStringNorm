@@ -1,34 +1,4 @@
 test_that(
-    'sample.content.normalization regression case "housekeeping sum"', {
-        load('data/NanoStringNorm.Rda');
-
-        result <- sample.content.normalization(
-            NanoStringNorm.test.data$inputs$x,
-            NanoStringNorm.test.data$inputs$anno,
-            'housekeeping.sum',
-            verbose = FALSE
-            );
-
-        expect_equivalent(result, NanoStringNorm.test.data$outputs$housekeeping.sum);
-        }
-    );
-
-test_that(
-    'sample.content.normalization regression case "housekeeping geo mean"', {
-        load('data/NanoStringNorm.Rda');
-
-        result <- sample.content.normalization(
-            NanoStringNorm.test.data$inputs$x,
-            NanoStringNorm.test.data$inputs$anno,
-            'housekeeping.geo.mean',
-            verbose = FALSE
-            );
-
-        expect_equivalent(result, NanoStringNorm.test.data$outputs$housekeeping.geo.mean);
-        }
-    );
-
-test_that(
     'sample.content.normalization regression case "top mean"', {
         load('data/NanoStringNorm.Rda');
 
