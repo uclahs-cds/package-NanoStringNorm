@@ -5,11 +5,17 @@
 
 ## Added
 * Added CSV support for nCounter Excel files. Excel files must be converted externally.
+* Added content to README
 
 ## Changed
 * Update changelog to Markdown format
 * Replaced RUnit framework with testthat
 * Update `R CMD check` CI/CD action
+* Minor fixes for compliance with CRAN standards
+  * Use `inherits()` for class comparisons
+  * Stop file exports in examples
+  * Explicitly declare XML function calls
+  * Ignore metadata files in package build
 
 
 # NanoStringNorm 2.0.0 (2023-03-21)

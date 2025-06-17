@@ -138,6 +138,7 @@ NanoString.mRNA.norm <- NanoStringNorm(
 ### 3 plot results ############################################################
 
 # Plot all the plots as PDF report.  See help on Plot.NanoStringNorm for examples
+\dontrun{
 pdf('NanoStringNorm_Example_Plots_All.pdf');
 Plot.NanoStringNorm(
 	x = NanoString.mRNA.norm,
@@ -145,6 +146,7 @@ Plot.NanoStringNorm(
 	plot.type = 'all'
 	);
 dev.off();
+}
 
 }
 \keyword{NanoString}

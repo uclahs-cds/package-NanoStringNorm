@@ -17,11 +17,11 @@ NanoStringNorm <- function(x, anno = NA, header = NA, Probe.Correction.Factor = 
 		}
 
 	# get correct list item from xls or NSN output
-	if (class(x) == 'NanoString') {
+	if (inherits(x, 'NanoString')) {
 		x <- x[[1]];
 		header <- x[[2]];
 		} 
-	else if (class(x) == 'NanoStringNorm') {
+	else if (inherits(x, 'NanoStringNorm')) {
 		x <- x$normalized.data;
 		}
 
