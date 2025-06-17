@@ -66,7 +66,7 @@ test_that(
             predict.conc = TRUE
             );
 
-        expect_equivalent(result, NanoStringNorm.test.data$outputs$random);
+        expect_equivalent(result, NanoStringNorm.test.data$outputs$random.combined);
         }
     );
 
