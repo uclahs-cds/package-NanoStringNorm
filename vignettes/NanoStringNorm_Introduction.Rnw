@@ -100,7 +100,7 @@ Alternatively, you can import nCounter spreadsheet data from CSV format into R u
 
 <<eg.read.xls>>=
 # directly import the nCounter output
-path.to.csv.file <- file.path('data/RCCCollector1_rat_tcdd.csv');
+path.to.csv.file <- system.file('extdata', 'RCCCollector1_rat_tcdd.csv', package = "NanoStringNorm");
 NanoString.mRNA <- read.csv.RCC(path.to.csv.file);
 # only keep the counts and not the header
 NanoString.mRNA <- NanoString.mRNA$x;
