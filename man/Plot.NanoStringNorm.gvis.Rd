@@ -42,7 +42,7 @@
  \cr \cr
  For further documentation regarding these plots see the R package googleVis and Google's visualization API.
  \cr \cr
- \url{http://code.google.com/archive/p/google-motion-charts-with-r}
+\url{https://code.google.com/archive/p/google-motion-charts-with-r}
  \cr
  \url{https://developers.google.com/chart/?csw=1}
 }
