@@ -30,7 +30,7 @@ quantile normalization is based on pegging each sample to an empirically derived
 }
 \references{
 See NanoString website for PDFs on analysis guidelines:
-	\url{https://www.nanostring.com/support/product-support/support-documentation}
+	\url{https://nanostring.com/support/support-documentation/}
 
 The NanoString assay is described in the paper:
 	Fortina, P. & Surrey, S. Digital mRNA profiling. Nature biotechnology 26, 293-294 (2008).

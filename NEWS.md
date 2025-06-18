@@ -1,4 +1,4 @@
-# NanoStringNorm 3.0.0 (2025-06-17)
+# NanoStringNorm 3.0.0 (2025-06-18)
 
 ## Removed
 * Removed Excel `.xls` support due to broken CRAN dependency
@@ -17,6 +17,9 @@
   * Explicitly declare XML function calls
   * Ignore metadata files in package build
 * Migrate test cases to standard `testthat` format
+
+## Fixed
+* Replace broken links in documentation
 
 
 # NanoStringNorm 2.0.0 (2023-03-21)
