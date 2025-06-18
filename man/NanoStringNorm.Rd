@@ -79,7 +79,7 @@ The NanoString assay is described in the paper:
 data(NanoString);
 
 # alternatively you can import the dataset
-# path.to.xls.file <- system.file("extdata", "RCC_files", "RCCCollector1_rat_tcdd.xls", 
+# path.to.xls.file <- system.file("extdata", "RCCCollector1_rat_tcdd.xls", 
 # 	package = "NanoStringNorm");
 # NanoString.mRNA <- read.xls.RCC(x = path.to.xls.file, sheet = 1);
 

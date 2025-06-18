@@ -16,7 +16,7 @@ Returns a list with two components.  The first is the header information which c
 \examples{
  
 # directly import the nCounter output
-path.to.csv.file <- system.file("extdata", "RCC_files", "RCCCollector1_rat_tcdd.csv",
+path.to.csv.file <- system.file("extdata", "RCCCollector1_rat_tcdd.csv",
 	package = "NanoStringNorm");
 NanoString.mRNA <- read.csv.RCC(path.to.csv.file);
 
