@@ -16,6 +16,7 @@
   * Stop file exports in examples
   * Explicitly declare XML function calls
   * Ignore metadata files in package build
+* Migrate test cases to standard `testthat` format
 
 
 # NanoStringNorm 2.0.0 (2023-03-21)
